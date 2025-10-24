@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thathang</title>
+<style>
+/* Basic Reset */
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: Arial, sans-serif; background:#f4f4f4; color:#333; line-height:1.6; }
+a { color:#007bff; text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+/* Header */
+header { background: linear-gradient(90deg,#ff416c,#ff4b2b); color:#fff; padding:20px 0; text-align:center; }
+header h1 { font-size:2rem; }
+
+/* Navigation */
+nav { background:#333; }
+nav ul { display:flex; list-style:none; justify-content:center; flex-wrap:wrap; }
+nav ul li { margin:0 15px; }
+nav ul li a { color:#fff; padding:10px; display:block; }
+
+/* Hero Section */
+.hero { text-align:center; padding:50px 20px; background:#ffe5e0; border-radius:10px; }
+
+/* Animated Text */
+.animated-text-container { text-align:center; margin:20px 0; font-size:1.5rem; color:#ff416c; font-weight:bold; overflow:hidden; white-space:nowrap; border-right:.15em solid #ff4b2b; width:fit-content; margin-left:auto; margin-right:auto; }
+@keyframes typing { from { width:0 } to { width:100% } }
+@keyframes blink { 50% { border-color: transparent } }
+.animated-text { display:inline-block; animation: typing 4s steps(50,end), blink .75s step-end infinite; white-space:nowrap; overflow:hidden; border-right:.15em solid #ff4b2b; }
+
+/* Container */
+.container { max-width:1000px; margin:30px auto; padding:0 20px; }
+
+/* Blog Post */
+.blog-post { background:#fff; padding:20px; margin-bottom:30px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+.blog-post h2 { color:#ff416c; margin-bottom:10px; }
+.blog-post p { margin-bottom:10px; }
+
+/* Buttons */
+.affiliate-btn { display:inline-block; padding:10px 20px; background:#ff4b2b; color:#fff; border-radius:5px; text-decoration:none; margin:5px 5px 5px 0; }
+.affiliate-btn:hover { background:#ff416c; }
+
+/* Contact buttons */
+.contact-buttons a { margin:5px; display:inline-block; }
+
+/* Footer */
+footer { background:#333; color:#fff; text-align:center; padding:15px 0; margin-top:30px; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1> Thathang</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#affiliate">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Welcome to My Corner of the Internet</h2>
+    <p>Hello! I'm Thathang Huazel. This is my Corner of the internet—a place to share my projects, passion, and creative work.</p>
+</section>
+
+<!-- Animated Text -->
+<div class="animated-text-container">
+    <p class="animated-text">I love creating, coding, and sharing knowledge ..</p>
+</div>
+
+<div class="container">
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Latest Posts</h2>
+
+        <!-- Blog Post: Top Shopping Apps -->
+        <div class="blog-post">
+            <h2>Top Shopping Apps for Android</h2>
+            <p>Discover the best deals with these top shopping apps. Shop anytime, anywhere, and enjoy amazing discounts!</p>
+            
+            <a class="affiliate-btn" href="https://www.amazon.in/?tag=Lunvalte20-21" target="_blank">🛒 Amazon</a>
+            <a class="affiliate-btn" href="https://linkredirect.in/visitretailer/2318?id=4635904&shareid=SraPkZJ&dl=https%3A%2F%2Fwww.flipkart.com%2F" target="_blank">📱 Flipkart</a>
+            <a class="affiliate-btn" href="https://myntr.it/UAJ76LG" target="_blank">👗 Myntra</a>
+            <a class="affiliate-btn" href="https://meesho.com/product/12345?aff_id=191025" target="_blank">👜 Meesho</a>
+        </div>
+
+    </section>
+
+    <!-- Affiliate Games Section -->
+    <section class="affiliate-games" id="games">
+        <h2>Top Mobile Games</h2>
+        <p>Check out these popular mobile games. Click below to download and enjoy!</p>
+
+        <a class="affiliate-btn" href="YOUR_AFFILIATE_LINK_HERE" target="_blank">PUBG Mobile</a>
+        <a class="affiliate-btn" href="YOUR_AFFILIATE_LINK_HERE" target="_blank">Call of Duty Mobile</a>
+        <a class="affiliate-btn" href="YOUR_AFFILIATE_LINK_HERE" target="_blank">Clash of Clans</a>
+        <a class="affiliate-btn" href="YOUR_AFFILIATE_LINK_HERE" target="_blank">Free Fire</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:thanga135790@gmail.com">thanga135790@gmail.com</a></p>
+        <div class="contact-buttons">
+            <a class="affiliate-btn" href="https://facebook.com/YOUR_PROFILE" target="_blank">Facebook</a>
+            <a class="affiliate-btn" href="https://instagram.com/YOUR_PROFILE" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    &copy; 2025 Thathang. All rights reserved.
+</footer>
+
+</body>
+</html>
