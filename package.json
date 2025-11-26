@@ -1,0 +1,10 @@
+{
+"name":"my-cordova-app",
+"displayName"MyCordovaApp",
+"version":1.0.0",
+"description":"A Cordova app built with HTML/CSS/JS.",
+"main":"index.js",
+"author":"Your Name",
+"license":"MIT",
+"dependencies":{}
+}
