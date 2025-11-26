@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+Meta name="viewpoint"content="width=device=width,initial-scale=1.0"/>
+<title>Facebook Login</title>
+<style>
+body{
+margin:0;
+font-family:Heletica,Arial,sans-serif;
+backgrund-color:#f0f2f5
+}
+.container{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+.left{
+flex:1;
+padding:0 50px;
+}
+.left h1{
+color:#1877f2;
+font-size:60px;
+margin-bottom:10px;
+}.
+.left p{
+font-size:24px;
+color:1c1e21;
+.right{
+flex:1;
+display:flex;
+justify-cntent:center;
+}
+.lutna-box{
+background-color:#fff;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0.1);
+width:360px;
+texr-align:center;
+}
+.lutna-box input{
+width:90px;
+padding:14px;
+margin:8px 0;
+border:1px solid #dddfe2;
+border-radius: 6px;
+font-size:16px;
+}
+.lutna-box button{
+width:95%;
+padding:14px;
+background-color:#1877f2;
+color#fff;
+font-size:18px;
+border:none;
+borde-radius=6px;
+cursor:pointer;
+font-weight:bold;
+}
+.lutna-box button:hover{
+background-color:#166fe5;
+}
+.lutna-box a{
+display:block;
+margin-top:12px;
+color:#1877f2;
+font-size:14px;
+text-decoration:none;
+}
+.lutna-box a:hover{
+text-decoration:underline;
+}
+hr{
+border:none;
+bprder-top:1px solid#dddfe2;
+margin:20px 0;
+}
+.create-btn{
+background-color:#42b72a;
+color:white;
+padding:14px;
+border-radius:6px;
+border:none;
+font-size:17px;
+cursor:pointer;
+width:60%;
+margin-top:10px;
+}
+.create-btn:hover{
+background-color:#36a420;
+}
+footer{
+text-allign:center;
+margin-top:30px;
+olor:#65679b;
+font-size:12px
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="left">
+<h1>Maibu</h1>
+<p>khovel a lawmte toh kithuzakna din Maibu.</p>
+</div>
+<div class="right">
+<div class="lutna-box">
+<form>
+<input type="text"placeholder="na Email or na phone number"required/>
+<input type="password" placeholder="password" required/>
+<a herf="#"Haha manghilhkha?</a>
+</hr>
+<button type="button"class" creat-btn">Atuamna bawl diam ?<?button>
+</form>
+</div>
+</div>
+</div>
+
+<-===Main Page-===>
+<div id="main-page">
+<die class="navbar">
+<aherf="#"class="logo">Maibu</a>
+<input type="text"placeholder="lawmte zonna">
+<div class="menu">
+<a herf="#">Inn</a>
+<a herf="#">Lawmte</a>
+<a herf="#">Messages</a>
+<a herf="#">Theisakna</a>
+<button onlick="Pot-in()">Log Out</button>
+</div>
+</div>
+<div class="container">
+<div class="sidebar">
+<ul>
+<li>Inn</li>
+<li>lawmte</li>
+<li>Et ding</li>
+<li>bazar buuk</li>
+<li>Kimawlna</li>
+</ul>
+</div>
+<div class="feed">
+<div class="post-box">
+<input type="placeholder"="Na lungsim a bangom a?">
+</div>
+<div class="post">
+<h3>Tangtei</h3>
+<p>leilak akimawl</p>
+</div>
+<div class="post">
+<h3>Thankik</h3>
+<p>Lumlua tulak akimawl in</p>
+</div>
+</div>
+<div class="contacts">
+<h4>Contacts</h4>
+<div class="contact">
+<img
+src="https://via.placeholder.com/32"
+alt="User 1">
+<span>Baibek</span>
+</div>
+<div class="contact">
+<img
+src="https://via.placeholder.com/32"
+alt="User 2">
+<span>Zusa</span>
+</div>
+<div class="contact">
+src="https://via.placeholder.com/32"
+alt="User 3">
+<span>Sarah</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+//Simple login system(for demo)
+function loginUser(event){
+event.preventDefault();
+const email=
+document.getElementByld("email").value;
+const password=
+document.getelementByld("password").value;
+//Example credentials
+if(email==="test@gmail.com"&&
+password ==="1234"){
+document.getElementByld("login-
+page").style = "none";
+document.getElementByld('main-
+page").styledisplay = "block";
+}else{
+alert("Invalid login.try test@gmail.com/
+1234");
+}
+}
+function logout(){
+document.getElementByld("main-
+page").style = "none";
+document.getElementByld('login-
+page").styledisplay = "flex";
+}
+</script>
+</body>
+</html>

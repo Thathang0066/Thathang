@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta chartsrt+"UTF-8">
+<meta name="viewpoint"content="widt=device-width,initial-scale=1.0">
+<title>Biodata Form</title>
+<style>
+body{
+font-family:Aral,sans-serif;
+mat=rgin:30px;
+}label{
+display:block;
+margin-top:10px;
+}
+input,textarea{
+width:300px;
+padding:5px;
+margin-top:5px;
+}button{
+margin-top:15px;
+padding:8px 15px;
+}
+.outpuy{
+margin-top:20px;
+bodrder:1px solid #ccc;
+padding:15px;
+widt:350px;
+}
+</style>
+</head>
+<body>
+<h2>Eter Your Biodata</h2>
+<form id="biodata form">
+<labelfor="name">Full Name:</label>
+<input type="text"id="name"name"="name" required>
+<label for"dob">Date of birth:<label>
+<input type="date"id=dob"name"dob"required>
+<label for="mobile">Mobile Number:</label>
+<input type="text"id=mobile"name"mobile required pattern="[0-9]{10}" maxlength="10" placeholder="10-digit number">
+<button type="button"onclick="submitBiodata()">Submit</button>
+</form>
+<div class="output"id="output" style="display:none;>
+<h3>Your Biodata:</h3>
+<p><strong>Name:</strong> <span id="outName"></span></p>
+<p><strong>Date of Birth:</strong> <span id="outDob"></span></p>
+<p><strong>Adress:</strong> <span id="outAdress"></span></p>
+<p><strong><p>>Mobile No:</strong> <span id="outMobile"></span></p>
+</div>
+<script>
+//Restrict mobile input to digits only while typing
+const mobileInput = document.getElementByld('mobile');
+mobileInpit.addEventListerner('input,function(){
+this.value=this.value.replace(/[^0-9]/g,");
+});
+function submitBiodata(){
+//Get value
+const name =
+document.getElementByld('name').value;
+const dob =
+document.getElementByld('dob').value;
+const address=
+document.getElementByld('address')value;
+const mobile =
+document.getElementByld('mobile')value;
+if(mobile.length !==10){
+alert('Mobile number must be 10 digits.')
+return;
+}
+//Show output 
+document.getElementByld('outName').innerText
+=name;
+document.getElementByld('outDob').innertext=
+dob;
+document.getElementByld('outAddress').innertext=
+address;
+document.getElementByld('outMobile').innertext=
+mobile;
+document.getElementByld('output').style.display
+='block';
+}
+</script>
+</body>
+</html>

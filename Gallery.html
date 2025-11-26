@@ -1,0 +1,258 @@
+<!DOCTYPEhtml>
+<htnl lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name"viewpoint"content="width=device-
+width,initial-scale=1.0"/>
+<title>Responsive Website wuth Gallery & Contact
+From</title>
+<style>
+:root(
+--bg-color:#f5f5f5;
+--text-color:#333;
+--card-bg:#fff;
+--nav-bg:#444;
+--header-bg:#333;
+--footer-bg:#333;
+--accent-color:#2196f3;
+}
+[data-theme="dark"](
+--bg-color:#121212;
+--text-color:#f5f5f5;
+--card-bg:#1e1e1e;
+--nav-bg:#222;
+--header-bg:#000;
+--footer-bg:#333;
+--accent0color:#64b5f6;
+}
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+transition:background 0.4s, color 0.4s;
+}
+body{
+font-family:"Poppins",Arial, sans-serif;
+background:var(--bg--color);
+color:var(--text-color);
+line-height:1.6;
+}
+header{
+background:var(--header-bg);
+color:#fff;
+padding:20px 0;
+text-align:center;
+position:relative;
+}
+header h1
+animation:fadelnDown 1s ease-in-out;
+}
+nav(
+display:flex;
+justify-content:center;
+background:var(--nav-bg);
+flex-wrap:wrap;
+}
+nav a{
+color:white;
+padding:14px20px;
+text-decoration:none;
+text-align:ceter;
+transition:0.3s;
+}
+nav a:hover{
+background:var(--accent-color);
+}
+.theme-toggle{
+position:absolute;
+top:20px;
+right:20px;
+background:var(--accent-color);
+border:none;
+color:white;
+padding:8px 12px;
+border-radius:5px;
+cursor:pointer;
+transition:0.3s;
+}
+.theme-toogle:hover{
+opacity:0.9;
+}
+.contaier{
+display:flex;
+flex-wrap:wrap;
+padding:20px;
+gap:20px;
+justify-content:center;
+}
+main,aside{
+background:var(--card-bg);
+padding:20px;
+border-radius:12px;
+box-shadow:1 3px 8px rgba(0,0,0,0.1)
+animation:fedeln 1.2s ease;
+}
+main{
+flex:3,
+mainwidth:280px;
+}
+aside(
+flex:1;
+main-width:200x;
+}
+footer{
+backgroud:var(--footer-bg);
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
+/*--Gallery--*/
+.gallery{
+display:grind;
+grind-template-columns:repeation(auto-fit
+minmax(200px, 1fr));
+gap:15px;
+margin-top:20px;
+}
+.gallery img{
+width:100%;
+border-radius:10px;
+transition:transform 0.3s ease,box-shadow
+0.3s ease;
+}
+.gallery img:hover{
+transform:scale(1.05);
+box-shadow:0 4px 15px rgba(0,0,0,0.3);
+}
+/*---Contact Form---*/
+.contact-form{
+backgroundvar(--card-bg);
+padding:20px;
+border-radius:12px;
+box-shadow:0 3px 8px rgba(0,0,0.1);
+margin:20px auto;
+max-width:600px;
+animation:fadeln 1.2s ease;
+}
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:10px;
+margin-bottom:12px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size: 1em;
+background:var(--bg-color);
+color:var(--text-color);
+}
+.contact-form button{
+width:100%;
+padding:12px
+border:none:
+background:var(--accent-color);
+color:white;
+font-size:1em;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+.contact-form:hover{
+opacity:0.9;
+}
+@media (max-width:768px) {
+.container{
+flex-direction:column;
+}
+.theme-toggle{
+top:10px;
+right:10px;
+}
+}
+/*Animation*/
+@keyframes fadeln{
+from{ opacity:0; transform: transateY(15px);}
+to { opacity:1; transform:translateY(0);}
+}
+@keyframes fadelnDown{
+from{ opacity:0; transform: transateY(-20px);
+}
+to { opacity:1; transform:translateY(0);}
+}
+</style>
+</header>
+<body>
+<header>
+<h1>My Responsive Website</h1>
+<p>Now with Gallery & Contact Form</p>
+<button class="them-toogle" id="them-
+toggle">🌙Dark Mode</button>
+</header>
+<nav>
+<a href="#">Home</a>
+<a href="#gallery>Gallery</a>
+<a href="#contact>Contact</a>
+<a href="#>"Service</a>
+<a href="#">About</a>
+</nav>
+<dic class="container">
+<main>
+<h2>Welcome to My Website</h2>
+<p>This version inclides a responsive image
+gallery and a contact form section with dark/light
+them support.</p>
+<!--GALLERY-->
+<h2>="gallery">📸 Image Gallery</h2>
+<div class="gallery">
+<img
+src="https://via.placeholder.com/300x200?text=Image=+1" alt="gallery 1">
+<img
+src="https://via.placeholder.com/300x200?text=Image=+2" alt="gallery 2">
+<img
+src="https://via.placeholder.com/300x200?text=Image=+3" alt="gallery 3">
+<img
+src="https://via.placeholder.com/300x200?text=Image=+4" alt="gallery 4">
+<img
+src="https://via.placeholder.com/300x200?text=Image=+5" alt="gallery 5">
+<img
+src="https://via.placeholder.com/300x200?text=Image=+6" alt="gallery 6">
+</div>
+</main>
+<aside>
+<h3>Quick Links</h3>
+<ul>
+<li>Recent News</li>
+<li>Popular Topics</li>
+<li>Contact Info</li>
+<ul>
+<aside>
+</div>
+<!--CONTACTFORM-->
+<sectionclass="contact form"id="contact">
+<h2>📤 COntact Us</h2>
+<from>
+<input type="text" placeholder="Your Name" required">
+<input type="email" placeholder="Your Email" required">
+<texture raws="5" placeholder="Your Message" required></textarea>
+<buton type="submit">Send Message</button>
+</form>
+</sectiom>
+<footer>
+<p>© 2025 My Website | Desiged by Thathang Hauzel </p>
+</footer>
+<script>
+const toggleButton = document.getElementByld('theme-toogle');
+const body = document.body;
+toogleButton.addeventListener('click').() => {
+const currentTheme = body.getAttrbute('data-teme');
+if ( currentTheme ==='dark'){
+body.removeAttribute('data-Theme');
+togleButon.textContent = '🌙 Dark Mode';
+}else{
+body.setAttribute('data-theme','dark');
+toggleButton.textContent = ☀ Light mode';
+}
+});
+>/script
+</body>
+</html
