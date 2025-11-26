@@ -1,0 +1,226 @@
+<!doctype=html>
+<html lang="en"
+<head>
+<meta charset="ytf-8"/>
+<meta name="viewpoint"content=width=drive-width,initial-scale=1"/>
+<title>MyvFirst Website--Beginner Project</title>
+<meta name+"description"content="A simple single-sile website project for 
+HTML/CSS/JS beginners"/>
+<!--Simlpe style(keep in the same file so beginners can open it easily)-->
+<style>
+:root
+--bg#f7fbff;
+--card:#3b82f6;
+--accent:#3b82fb;
+--muted#6b7280;
+font-family:Inter,system-ui,apple-system,'Segop UI',Rooto,'Helevtic Neue',
+Arial;
+}
+*{boz-sizing:borber-box}
+body{margin:0;background:var(--bg);colour:#111:line-height:1.5}
+header{background:linear-gradient(90deg,#fff0%,#fOf0ff 100%);padding:18px
+20px;border-bottom:1x solid #e6eef0}
+container{max-width:980px;margin:0 auto;padding:20px}
+/*Nav*/
+.nav[display:flex;aling-items:center;justify-content:space-between}
+.brand{font-wight:7--;colour(--acent)}
+nav a{magrin-left:14px;text-decration:none;colour:var(--muted)
+/*Bero*/
+.hero{display:flex;gap:30px;align-items:center;margin:24pxc 0)
+.hero.left{flex:1}
+.hero p{colour;var(--muted)}
+.cta{display:inline-block;margin-top:12px;padding:10px 10px;background:var(--
+accent:colour:white;border-radius:10px;text-decortation:nonr}
+.card{background:var(--card);paddig:16px:border-radius:var(--radius);box-
+shadow:0 6px 20px rgba(59,130,246,0.06)}
+/*Features grd*/
+.grid{display:grid;grid-templet-columns:repeat(auto-
+fit,minmax(220px,1fr);gap:16px;margin-top:18px}
+.featureh3{margin:0 o 6px0}
+.feature p{margin:0;colour;var(--muteeeeeeeeeeeed)}
+?*Interactive section (game)*/
+.game{display:flex;flex-drection:column;gap:12px}
+.game input[type"number"]{width:100px;padding:8px;prder-
+radius:8px;border:1px solid#600}
+/*Gallery*/
+.gallery{display:flex;gap:10px;flex-wrap:wrap}
+.gallery img{width:calc(33.333%-6.666px);border-radius:8px}
+/*Contact*/
+from label{display:block;margin:8px0 6px;font-weight:600}
+from input,from textarea{width:100%padding:10px;border-
+radius:8px;border:1px solid#eaeff7}
+from buttom{margin-top:10px;padding:10px14px;border-
+radius:8px;background:var(--accent);border:none;colour#ff}
+footer{margin-top:24px;padding:18px 0;colour:var(--muted) font size:14px;text-
+align:cenetr}
+/*Responsive tweaks*/
+@media (max-width:720px){
+.hero{flex-directiom:column}
+.gallery img{width:100%}
+}
+</style>
+</head>
+</body>
+<header>
+<div class="container nav">
+<div class="brand"MyFirstSite</div>
+<nav>
+<a herf="#feature">Features</a>
+<a herf="#game">Try Game</a>
+<a herf="#contact">Contact</a>
+</nav>
+</div>
+<main class="container">
+<!--hero sectiom-->
+<sectiom class="hero">
+<div class="left">
+<h1>Learn web development by bulding this simple project</h1>
+<p>Single-file starter website that includes layout, styling, and a tiny JavaScript
+game you can modify and expriment with.</p>
+<aclass="cat"href='#game">Play the Game,</a>
+</div>
+<div style="width:220px".>
+<div class="card">
+<h4 style="margin:00 8px 0">What you'll practice</h4>
+<uL style="margin:0:padding-left:18px;colour:var(--muted)">
+<Ii>HTML structure(section,heading,forms)</Ii>
+<Ii>CSs styling and responsive layout</Ii>
+<Ii>JavaScript interactivity (DOM+events)</Ii>
+</uI>
+</div>
+</div>
+</section>
+<!--features-->
+<section id="features"class="card">
+<h2 style="margin-top:0"<features</h2>
+<div class="grid">
+<h3>Responsive layout</h2>
+<p>Work on mobile and deskto-resize the window to see it adapt.</p>
+</div>
+<div class="feature">
+<h3>Small<readable code</h3>
+<p>All code is kept in one file for easy learning and editing.</p>
+<div class="feature">
+<h3.Interactive mini-game</h3>
+<p>Try the "Guess the Nubmber"game below and change the logic to learn JavaScript.</p>
+</div>
+</div>
+</section>
+<!--Game section:Guess the Number-->
+<section id="game"class"card"style="margin-top:18px">
+<h2 style="margin-top:0">Mini Projec:Guest the number</h2>
+<p class="muted'>The computer picks a number between 1 and 50. Try to guess it!</p>
+<div class="game">
+<div style="display:flex;gap:8px;align-items:center">
+<inpit id=guessinput"type="number"min="1"max="50" placeholder="Your guess"/>
+<button id="guessBtn">Guess</button>
+<button id="resetbtn">New Game</Button>
+</div>
+<p class="status" id="status">Good luck-- make you first guess!</p>
+<p class="muted">Attempts:<span id="attempts"<0>/span></p>
+</div>
+<!--Quick tips for learners-->
+<details style+"margin-top:12px">
+<summary style="cursor:pointer">How this works(click to expand)</summary>
+<p style="margin:8px0;colour:var(--muted)">A random number is generated in JavaScript and stored. When the user click"Guess" we compare the value to the secret number and show feedback.You can change the range or add hints.</p>
+</details>
+</section>
+<!--Simple gallery(image pacehloder)-->
+<section class="card" style="margin-top:18px">
+<h2 style=margin-top:0">Gallery</h2>
+<div class="gallery">
+<img scr="https://via.paceholder.com/300x180?text=Image+1"alt="Image 1">
+<img scr="https://via.paceholder.com/300x180?text=Image+2"alt="Image 2">
+<img scr="https://via.paceholder.com/300x180?text=Image+3"alt="Image 3">
+</div>
+</section>
+<!--Contact form (non-functional placeholder)-->
+<section id="contact" class="card" style="margin-top:18px">
+<h2 style+"margin-top:0>Contract/Feedback</h2>
+<formid"contractform" onsubmit="return false">
+<label for="name">Name</lebal>
+<input id="name" type="text" paceholder="Your name"/>
+<label for="email">Email</lebal>
+<input id="email"type="email" placeholder="you@example.com"/>
+<textarea id="message"rows="4" placeholder="Send feedback or questions"></texture>
+<button id="sendBtn">Send(not really)</button>
+</from>
+<p style="colour;var(--muted);fot-size:13px;margin-top8px">Note The contract
+form is a placeholder to practice forms. You can connect it to a server later.</p>
+</section>
+</main>
+</footer>
+<div class="container'>Made with ! --- edit this file to learn HTML/CSS/JS</div>
+</footer>
+<!--JavaScript:small and well-commented sogeginner can understand-->
+<script>
+//---------------------
+// Gues the Number game
+//---------------------
+(function(){
+//game state
+let secert=null;
+let attempts=0;
+// cached DOM nodes
+const guessInput=document.gotElemetByld('guessInpit');
+const guessBtn=document.gotElemetByld('guessBtn');
+const resetBtn=document.gotElemetByld('resetBtn');
+const status=document.gotElemetByld('status');
+const attemptsEl=document.gotElemetByld('attempts');
+//helper:start anew game
+function newGame(){
+/generate a number between 1 and 50 (inclusive)
+secret= Math.floor(math.random()*50)+1
+attempts=0
+attemptsEl.textContet=attempts;
+status.textContent='New game started--goodluck;
+guessInpit.value=";
+consoe.log(Secret number(for dev)->secret);//remove in production
+}
+//helper:handle a giess
+fuction handleGuess(){
+const value=Number(guessInput.value);
+if(value| |value<1||value>50({
+status.textContet='please enter a number between 1 and 50.';return;
+}
+attempts+=1;
+attemptsEl.textContent=attempts;
+if(value===secret){
+status.textContent='$ Correct!You guessed the number in '+ attempts + 'attempts.';
+}else if(value < secret)
+status.textContent='Too low -- try a higher number;
+}else{
+status.textContent='Too high -- try a lower number.';
+}
+}
+//wire up events 
+guessBtn.addEventListener('click', handleGuess);
+resetBtn.addEventlistener('click',newGame);
+//allow pressing Enter key inside the input to guess
+guesspoint.addEventListener('keyup',function(e){
+if(e.key=== Enter') handleGuess();
+));
+//start automatically when the pageloads newGame();
+//Small enhancement; show a little animation on correct guess
+const originalbg = document.body.style.background;
+const observer = new mutationObserver(function(){
+//this observer is intentionally simple for beginner; not required
+}};
+observer.observe(document.body,{attributes:false});
+})();
+//-----------------
+//contact from small demo
+//-------------------
+(function(){
+const form = document.getElementByld('contactform');
+const sendBtn = document.getElementByld('sendBtn')
+sendBtn.addEventListener('click',function(){
+//This is a demo: shoe an alert with the value. In rea; project you'd POST to a server.
+const name =  document.getElementByld('name').value||'Anonymous';
+const message = document.getElementByld(message').value|| '('no message)';
+alert('Thanks,'=name='! Your messsasge was recived (demo).\n\nMessage:'+ message);
+}};
+}}();
+</script>
+</body>
+</html>
